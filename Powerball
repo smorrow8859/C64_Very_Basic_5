@@ -1,0 +1,53 @@
+# Powerball
+
+5 printchr$(147)
+10 rem powerball lottery
+15 rem 10/1/16
+20 rem
+22 data 13,5,9,2,6,7
+25 :
+30 input"how much do you want to pay for
+ the lottery ticket";ca
+40 print
+80 :
+90 for t=1 to 6
+100 read rs(t)
+110 next
+120 rem enter your numbers
+130 :
+140 for x=1 to 6
+150 input"enter the powerball numbers yo
+u think will win";po(x)
+160 next
+165 print
+170 rem
+180 rem see if any match
+190 for x=1 to 6
+200 if po(x)=rs(x) then print po(x)" is
+a match":fl=1:mo(x)=po(x)
+210 next
+215 print
+220 if fl then print "you had a match on
+ some of the numbers"
+230 rem
+240 rem show the numbers you selected
+250 :
+255 print
+260 for x=1 to 6
+270 print"your numbers were "po(x)
+280 next
+285 print
+290 if fl<1 then print "you didn't win a
+ny money for today.":goto 360
+300 for x=1 to 6
+310 mo=mo+mo(x)+ca
+320 next
+330 rem
+340 rem show how much you won today
+350 rem
+355 print
+360 if fl<1 then print"you are a loser t
+oday. please try again tomorrow":end
+370 if mo>0 then print"you just won $"mo
+ ". time to spend it   somewhere!"
+380 stop

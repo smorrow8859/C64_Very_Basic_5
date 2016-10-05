@@ -1,25 +1,25 @@
-#For Loop Example 1
+#For Loop Example 1.5
 
 10 PRINTCHR$(147)
 20 FOR X=1 TO 15
 30 PRINT X
 40 NEXT
 
-#For Loop Example 2
+#For Loop Example 2.5
 
 10 PRINTCHR$(147)
 20 FOR X=1 TO 15 STEP 4
 30 PRINT X
 40 NEXT
 
-#For Loop Example 3
+#For Loop Example 3.5
 
 10 PRINTCHR$(147)
 20 FOR X=15 TO 1 STEP -4
 30 PRINT X
 40 NEXT
 
-#For Loop Example 4
+#For Loop Example 4.5
 
 10 PRINTCHR$(147)
 20 FOR X=15 TO 1 STEP -2

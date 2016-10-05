@@ -1,4 +1,4 @@
-#Get Example 1
+#Get Example 1.5
 
 5 REM GET EXAMPLE
 6 :
@@ -7,7 +7,7 @@
 30 PRINT A$
 40 END
 
-#Get Example 2
+#Get Example 2.5
 
 5 ?CHR$(147)
 10 ? "PRESS Q TO VIEW A MESSAGE"
